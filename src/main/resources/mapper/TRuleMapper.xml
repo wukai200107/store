@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yupi.project.mapper.TRuleMapper">
+
+    <resultMap id="BaseResultMap" type="com.yupi.project.model.entity.TRule">
+            <result property="ruletype" column="ruleType" jdbcType="VARCHAR"/>
+            <result property="store" column="store" jdbcType="VARCHAR"/>
+            <result property="rulevalue" column="ruleValue" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        ruleType,store,ruleValue
+    </sql>
+</mapper>
